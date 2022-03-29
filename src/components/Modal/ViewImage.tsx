@@ -26,12 +26,17 @@ export function ModalViewImage({
       <ModalContent
         w="fit-content"
         h="fit-content"
-        maxH="600px"
-        maxW="900px"
+        maxH={['300px', '500px', '600px']}
+        maxW={['250px', '450px', '900px']}
         bgColor="pGray.700"
       >
         <ModalBody p={0}>
-          <Image borderTopRadius={6} src={imgUrl} maxH="600px" maxW="900px" />
+          <Image
+            borderTopRadius={6}
+            src={imgUrl}
+            maxH={['300px', '500px', '600px']}
+            maxW={['250px', '450px', '900px']}
+          />
         </ModalBody>
         <ModalFooter
           justifyContent="flex-start"
