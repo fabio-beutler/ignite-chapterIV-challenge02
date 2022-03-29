@@ -15,8 +15,9 @@ export function Header(): JSX.Element {
           mx="auto"
           px={20}
           py={6}
+          flexDir={['column', 'row']}
         >
-          <Image src="logo.svg" h={10} />
+          <Image src="logo.svg" h={10} mb={[4, 0]} />
           <Button onClick={() => onOpen()}>Adicionar imagem</Button>
         </Flex>
       </Box>
